@@ -108,6 +108,69 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &440741155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 440741156}
+  - component: {fileID: 440741157}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &440741156
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 440741155}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &440741157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 440741155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7584ec1292f4b4323af19fbd7b2d9e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - name: Jermaine_nofx
+    clip: {fileID: 8300000, guid: c806a57e0d92f48a9a91aca556074402, type: 3}
+    volume: 1
+    pitch: 1
+    panning: 0
+    loop: 0
+    playFromStart: 0
+    spatialBlend: 0
+    minDistance: 0
+    maxDistance: 0
+    soundPosition: {fileID: 0}
+  - name: Jermaine_echo
+    clip: {fileID: 8300000, guid: d501f92747c454408a091af3a482e58d, type: 3}
+    volume: 1
+    pitch: 1
+    panning: 0
+    loop: 0
+    playFromStart: 1
+    spatialBlend: 0
+    minDistance: 0
+    maxDistance: 0
+    soundPosition: {fileID: 0}
 --- !u!1 &817032234
 GameObject:
   m_ObjectHideFlags: 0
