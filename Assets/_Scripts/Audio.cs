@@ -4,10 +4,13 @@
 public class Audio
 {
     [SerializeField]private string name = "";
-    public string Name{get{return name;} set{name = value;}}
+    public string Name{get{return name;}}
 
     [SerializeField]private AudioClip clip = null;
-    public AudioClip Clip{get{return clip;} set{clip = value;}}
+    public AudioClip Clip{get{return clip;}}
+
+    [SerializeField]private TextAsset subtitles;
+    public TextAsset Subtitles{get{return subtitles;}}
 
     [Range(0, 1)][SerializeField]private float volume = 1;
     public float Volume{get{return volume;} set{volume = value;}}
@@ -20,9 +23,6 @@ public class Audio
 
     [SerializeField]private bool loop = false;
     public bool Loop{get{return loop;} set{loop = value;}}
-
-    [SerializeField]private bool playFromStart = false;
-    public bool PlayFromStart{get{return playFromStart;} set{playFromStart = value;}}
 
     [Range(0,1)][SerializeField]private float spatialBlend = 0;
     public float SpatialBlend{get{return spatialBlend;} set{spatialBlend = value;}}
@@ -59,9 +59,6 @@ public class Audio
             this.source.rolloffMode = AudioRolloffMode.Linear;
             this.source.transform.position = soundPosition.position;
         }
-
-        if (this.playFromStart)
-            this.source.Play();
     }
 
     public void play()

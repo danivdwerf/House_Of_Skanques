@@ -117,6 +117,8 @@ GameObject:
   m_Component:
   - component: {fileID: 440741156}
   - component: {fileID: 440741157}
+  - component: {fileID: 440741159}
+  - component: {fileID: 440741158}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -151,26 +153,59 @@ MonoBehaviour:
   audioClips:
   - name: Jermaine_nofx
     clip: {fileID: 8300000, guid: c806a57e0d92f48a9a91aca556074402, type: 3}
+    subtitles: {fileID: 4900000, guid: d980f70303ad0457c84d4983dd7c9bf8, type: 3}
     volume: 1
     pitch: 1
     panning: 0
     loop: 0
-    playFromStart: 0
     spatialBlend: 0
     minDistance: 0
     maxDistance: 0
     soundPosition: {fileID: 0}
   - name: Jermaine_echo
     clip: {fileID: 8300000, guid: d501f92747c454408a091af3a482e58d, type: 3}
+    subtitles: {fileID: 0}
     volume: 1
     pitch: 1
     panning: 0
     loop: 0
-    playFromStart: 1
     spatialBlend: 0
     minDistance: 0
     maxDistance: 0
     soundPosition: {fileID: 0}
+  - name: KarmaPolice
+    clip: {fileID: 8300000, guid: 5f167d7001b7846dcb8c7519a7949d8d, type: 3}
+    subtitles: {fileID: 4900000, guid: a6834982460a7464f8b35dbe7f605402, type: 3}
+    volume: 1
+    pitch: 1
+    panning: 0
+    loop: 0
+    spatialBlend: 0
+    minDistance: 0
+    maxDistance: 0
+    soundPosition: {fileID: 0}
+--- !u!114 &440741158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 440741155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c39a3c7267a440bc8dec2c359818788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &440741159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 440741155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a44d5669441754fa3a9ee668cb6afc4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &817032234
 GameObject:
   m_ObjectHideFlags: 0
